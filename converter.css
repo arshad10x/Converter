@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins","sans-serif";
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(158, 21, 221);
+}
+.wrapper{
+    width:370px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+header{
+  margin-top: -20px;
+  margin-bottom:10px;
+}
+.wrapper header{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper.main{
+    margin:40px 0 20px 0;
+}
+
+.main:where(input,select,button){
+    width:100%;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+}
+.main p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.Number{
+text-align: center;
+}
+
+.main input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: rgb(166, 231, 180);
+    text-align: center;
+}
+.main input:focus{
+    padding: 0 14px;
+    border: 2px solid rgb(221, 134, 21);
+}
+ .main .drop-list{
+     display:flex;
+     margin-top: 20px;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .drop-list .select-box{
+     display: flex;
+     height: 45px;
+     width: 115px;
+     border-radius: 5px;
+     align-items: center;
+     justify-content: center;
+     border-radius: 1px solid #999;
+ }
+ .select-box select{
+     width: auto;
+     height: 45px;
+     font-size: 16px;
+     margin: 0 -5px 0 5px;
+     border-radius: 5px;
+     background-color: rgb(166, 231, 180);
+     
+ }
+
+ option{
+   text-align: center;
+ }
+ .converted-value{
+     font-size: 17px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight:800;
+ }
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+ .Converter{
+     height:42px;
+     font-size: 20px;
+     font-weight: 500;
+     color: #fff;
+     background: rgb(45, 143, 16);
+     outline: none;
+     border: none;
+     width: 200px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 5px;
+     margin-bottom:-30px;
+ }

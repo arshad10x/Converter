@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="converter.css">
+    <title>Converter</title>
+    
+    
+</head>
+<body>
+    <div class="wrapper">
+    <header>Converter</header>
+        <div class="main">
+            <div class="Number" id="Number">
+                <p id="input">Enter the Value </p>
+                <input type="text" id="take-input">
+                </div>
+                <div class="drop-list">
+                    <div class="from" id="from">
+                    <p>From</p>
+                    <div class="select-box" >
+                        <select id="select-from" name="select-from">
+                            <option value="" >Select</option>
+                            <option value="Decimal" >Decimal</option>
+                            <option value="Hexadecimal">Hexadecimal</option>
+                            <option value="Octal">Octal</option>
+                            <option value="Binary">Binary</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="icon">
+            </div>
+            <div class="to" id="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <select id="select-to" name="select-to">
+                            <option value="">Select</option>
+                            <option value="Decimal">Decimal</option>
+                            <option value="Hexadecimal">Hexadecimal</option>
+                            <option value="Octal">Octal</option>
+                            <option value="Binary">Binary</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <span class="converted-value">
+                <p id="value">0</p>
+            </span>
+            
+        <div class="last">
+            <button id="Converter"class="Converter" onclick="Calculate()">Convert</button>
+        </div>
+        </div>
+        
+    </div>      
+</body>
+<script src="converter.js"></script>
+<script>
+button.onclick=() => {
+const button = document.getElementById("button");
+const dropdown_1 = document.getElementById("select-from");
+const dropdown_2 = document.getElementById("select-to");
+ 
+  const temp_1_value = dropdown_1.value;
+  const temp_2_value = dropdown_2.value;
+
+  dropdown_1.value = temp_2_value;
+  dropdown_2.value = temp_1_value;
+}
+</script>
+
+</html>
